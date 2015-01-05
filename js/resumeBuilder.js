@@ -291,6 +291,12 @@ var education = {
 			"school":"Udacity",
 			"dates":"",
 			"url":"https://www.udacity.com/course/ud804"
+		},
+		{
+			"title":"Intro to jQuery",
+			"school":"Udacity",
+			"dates":"",
+			"url":"https://www.udacity.com/course/ud245"
 		}
 	],
 
