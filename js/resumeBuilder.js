@@ -1,7 +1,7 @@
 //create summary section
 var summary = {
 
-	"about":"I’m a Student studying Computer Science in Technical University of Moldova, I love learning and coding.\
+	"about":"My name is Zimenco Igor. I love learning and coding.\
 			I love to learn how programs work, and make my own program to solve challenging problems.\
 			I like watching online courses because they enrich my Computer Science skills.\
 			Programming has been always a fun activity for me.<br><br>",
@@ -30,11 +30,26 @@ var work = {
 		   <br><b>My responsabilities were</b>: <br><i>Write code for an existing Python/Django project<br>Testing service changes with mobile operators\
 		   <br> Writing synchronization scripts in PHP that were intended to synchronize Oracle databases with MySQL databases\
 		   <br>Writing admin interfaces in PHP, JS, JQuery, HTML, CSS.<br></i>"
+		},
+		{
+		  "employer":"Endava",
+		  "url":"http://careers.endava.com/en/Career-Opportunities/Internship-and-Graduate-Programmes/Internship-Programme/Software-Development.aspx",
+		  "title":"Internship program",
+		  "location":"Moldova, Chisinau",
+		  "dates":"17 August 2015 - 17 November 2015",
+		  "description":"Endava is a privately owned IT services company with over 2,500 employees. \
+		  Endava works with some of the world’s biggest brands <br> in Finance, Insurance, Telecommunications, Media, \
+     	  Technology, and Retail helping them harness digital technologies<br> \
+		  and transforming them into more agile, responsive and valuable businesses.<br> \
+		  <strong>During the internship program were taught the folowing technologies:</strong><br> \
+		  <i><strong>Java 7 SE , SQL/Oracle DB 11, JPA/Hibernate, Spring Framework, Java Web, JSF, Git, Maven.</strong><br>\
+		  Theoretical knowladge was enhanced by making a <strong>personal project</strong> and taking part in a <strong>real company project</strong>.</i> \
+		  "
 		}
 	],
 
 	display : function(){
-		for(job in work.jobs){
+		for(job in work.jobs){			
 			var formatted_employer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
 			formatted_employer = formatted_employer.replace("#",work.jobs[job].url);
 			var formatted_title = HTMLworkTitle.replace("%data%",work.jobs[job].title);
@@ -79,13 +94,28 @@ var projects = {
 		},
 		{
 			"title":"Resume Project",
-			"dates":"2014",
+			"dates":"2014-2015",
 			"description":"This web page is my resume page. The project was built on Google App Engine,\
-			 and the project was focused on using JSON like objects to manage content more efficiently.<br>\
-			 <div style='color: rgb(49, 151, 116);'>Note! Modal not avaliable for this page:)</div>",
+			 and the project was focused on using JSON like objects to manage content more efficiently.<br>",
 			"image":["images/resume_project.png"],
 			"url":"#"
-		}			
+		},		
+		{
+			"title":"Classic Arcade Game Clone(Frogger)",
+			"dates":"2015",
+			"description":"The project was built on Google App Engine, and the project was focused on using\
+			 JavaScript and Canvas to make a classic arcade game on a web page.",
+			"image":["images/frogger_project.png"],
+			"url":"http://iz-frogger.appspot.com/"
+		},		
+		{
+			"title":"Wiki on Java (Endava internship)",
+			"dates":"2015",
+			"description":"The project was built on Java SE, and it was focused on using\
+			 learned technologies on internship",
+			"image":["images/post_history_wiki_java.png"],
+			"url":"http://careers.endava.com/en/Career-Opportunities/Internship-and-Graduate-Programmes/Internship-Programme/Software-Development.aspx"
+		}	
 	],
 	display : function(){
 
@@ -120,7 +150,7 @@ var projects = {
 var bio = {
 	"name": "Igor",
 	"role":"Web Developer",
-	"age" :22,
+	"age" :23,
 	"contacts":{
 		"mobile":"+373 79890981",
 		"email":"diaser555@gmail.com",
@@ -129,12 +159,12 @@ var bio = {
 	},
 	"pictute":"images/me.jpg",
 	"welcome_msg":"Hi! I'm Igor, and I love learning and coding",
-	"skills":["C","Java","Javascript","JQuery","HTML&CSS","PHP&MySQL","Python"],
+	"skills":["Java 7 Standard Edition","Spring Framework (Spring Core,Spring MVC)","SQL / ORACLE DB 11 / MySQL","JPA / Hibernate","JSP","JSF with Primefaces","Tomcat 8","Git","Maven","C Programming Language","Python 2.7"],
 	display : function(){
 
 		//header
 		var formattedName = HTMLheaderName.replace("%data%","Igor Zimenco");
-		var formattedRole = HTMLheaderRole.replace("%data%","Python/PHP Developer");
+		var formattedRole = HTMLheaderRole.replace("%data%","Junior Java Developer");
 		var formattedPicture = HTMLbioPic.replace("%data%","images/fry.jpg");
 		var formattedWelcome = HTMLWelcomeMsg.replace("%data%",bio.welcome_msg);
 
@@ -185,7 +215,7 @@ var education = {
 		  "location":"Technical University of Moldova",
 		  "degree":"BA",
 		  "major":["Applied Informatics"],
-		  "dates":"2012 -2015(not yet finished - <b><big>Student</big></b>  )",
+		  "dates":"2012 - 18 june 2015",
 		  "url":"http://www.utm.md/en"
 		}
 	],
@@ -297,6 +327,12 @@ var education = {
 			"school":"Udacity",
 			"dates":"",
 			"url":"https://www.udacity.com/course/ud245"
+		},
+		{
+			"title":"Object-Oriented JavaScript",
+			"school":"Udacity",
+			"dates":"",
+			"url":"https://www.udacity.com/course/ud015"
 		}
 	],
 
