@@ -42,7 +42,7 @@ var work = {
      	  Technology, and Retail helping them harness digital technologies<br> \
 		  and transforming them into more agile, responsive and valuable businesses.<br> \
 		  <strong>During the internship program were taught the folowing technologies:</strong><br> \
-		  <i><strong>Java 7 SE , SQL/Oracle DB 11, JPA/Hibernate, Spring Framework, Java Web, JSF, Git, Maven.</strong><br>\
+		  <i><strong>Java 7 SE , JUnit , SQL/Oracle DB 11, JPA/Hibernate, Spring Framework, Java Web, JSF, Git, Maven.</strong><br>\
 		  Theoretical knowladge was enhanced by making a <strong>personal project</strong> and taking part in a <strong>real company project</strong>.</i> \
 		  "
 		}
@@ -159,7 +159,7 @@ var bio = {
 	},
 	"pictute":"images/me.jpg",
 	"welcome_msg":"Hi! I'm Igor, and I love learning and coding",
-	"skills":["Java 7 Standard Edition","Spring Framework (Spring Core,Spring MVC)","SQL / ORACLE DB 11 / MySQL","JPA / Hibernate","JSP","JSF with Primefaces","Tomcat 8","Git","Maven","C Programming Language","Python 2.7"],
+	"skills":["Java 7 Standard Edition","Spring Framework (Spring Core,Spring MVC)","SQL / ORACLE DB 11 / MySQL","JPA / Hibernate","JSP","JSF with Primefaces","JUnit","Git","Maven","C Programming Language","Python 2.7"],
 	display : function(){
 
 		//header
